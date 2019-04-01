@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-self, "Microsoft YaHei";
+            margin: 0;
+            padding: 0;
+            background:rgb(0,0,0);
+            overflow: hidden;
+        }
+        .cont-wrap{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont-wrap img{
+            width: 100%;
+            height: 100%;
+            max-width: 35rem;
+        }
+        .popup{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2)
+          
+           
+        }  
+        .proup-wrap{
+            position: absolute;
+            background: rgba(255, 255,255, 1);
+            border-radius: 10px;
+            width: 300px;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            transform:translate(-50%,-50%);
+            -moz-box-shadow: 0 0 10px 15px #0CC;
+            box-shadow: 0 0 5px 1px #ccc;
+            
+        }   
+        .proup-title{
+            text-align: center;
+            font-weight: bold;
+            margin-block-start: 0em;
+             margin-block-end: 1em;
+        } 
+        .proup-qq{
+            margin-block-end: 0em;
+        }  
+        .proup-phone{
+            margin-block-start: 0em;
+        }
+        .proup-qq,.proup-phone{
+            text-indent: 24px;
+            line-height: 30px;
+  
+        }
+        .support{
+            width:60px;
+            display: flex;
+            margin: auto;
+            margin-top: 10px
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cont-wrap">
+        <img src="images/icon.png">
+    </div>
+    <div class="popup">
+        <div class="proup-wrap">
+            <img src="images/SUPPORT.png" class="support">
+            <p class="proup-title">技术支持</p>
+            <p class="proup-qq">QQ：<span>1204017975</span></p>
+            <p class="proup-phone">电话：<span>1204017975</span></p>
+        </div>
+    </div>
+    
+</body>
+</html>
